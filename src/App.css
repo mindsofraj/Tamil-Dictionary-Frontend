@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --dark-blue: #1a3263;
+  --dark-orange: #f16821;
+  --light-orange: #fab95b;
+  --gray: #e8e2db;
+  --dark-gray: #898989;
+}
+::selection {
+  background-color: var(--light-orange);
+  color: #fff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scrollbar-gutter: stable;
+}
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: var(--dark-blue);
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.main {
+  background: linear-gradient(var(--gray), #fff);
+  background-size: 100% 700px;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+/*  Remvoing the Blue highlighting from elements */
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noSelect:focus {
+  outline: none !important;
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    background-size: 100% 300px;
+  }
+}

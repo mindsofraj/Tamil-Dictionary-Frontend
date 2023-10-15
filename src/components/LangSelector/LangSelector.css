@@ -1,0 +1,61 @@
+.langBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  width: calc((101 / 16) * 1rem);
+  height: calc((34 / 16) * 1rem);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.btn:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(41, 40, 47, 0.24);
+}
+.tamBtn {
+  line-height: 0.9;
+  font-size: 1.2rem;
+}
+
+.doubleArrow {
+  user-select: none;
+  pointer-events: none;
+  margin: 0 1rem;
+  transition: rotate 0.2s ease-in-out;
+}
+
+/* Media Queries */
+@media screen and (max-width: 450px) {
+  .btn {
+    width: calc((80 / 16) * 1rem);
+    height: calc((30 / 16) * 1rem);
+    font-size: 0.9rem;
+  }
+  .tamBtn {
+    font-size: 1rem;
+  }
+  .doubleArrow {
+    width: 50px;
+  }
+}
+@media screen and (max-width: 290px) {
+  .btn {
+    width: calc((70 / 16) * 1rem);
+    height: calc((25 / 16) * 1rem);
+    font-size: 0.7rem;
+  }
+  .tamBtn {
+    font-size: 0.9rem;
+  }
+  .doubleArrow {
+    width: 45px;
+    margin: 0 0.8rem;
+  }
+}
